@@ -1,0 +1,156 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(87, 108, 188, 0.7) 0%, rgba(19, 42, 83, 0.7) 100%);
+  animation: glowing 1.5s infinite;
+  padding: 18px 24px;
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.container:hover {
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+}
+
+.image {
+  margin-right: 24px;
+  width: 800px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 5px cyan;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 6px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.skills {
+  width: 100%;
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.skill {
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 100px;
+  background: var(--color-dark);
+  padding: 2px 22px;
+}
+
+.links {
+  width: 100%;
+  margin-top: 26px;
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 25px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: var(--color-primary);
+  padding: 1px 22px;
+  margin: 0 15px;
+}
+
+@keyframes glowing {
+  0% { box-shadow: inset 0 0 10px rgba(212, 212, 217, 0.7); }
+  50% { box-shadow: inset 0 0 15px rgba(212, 212, 217, 0.7); }
+  100% { box-shadow: inset 0 0 10px rgba(212, 212, 217, 0.7); }
+}
+
+@media only screen and (max-width: 1400px) {
+  .image {
+    width: 700px;
+    height: 300px;
+  }
+  .title {
+    font-size: 35px;
+  }
+  .description {
+    font-size: 25px;
+  }
+  .skill {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .image {
+    width: 650px;
+    height: 270px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .skill {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .image {
+    width: 620px;
+    height: 230px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .description {
+    font-size: 17px;
+  }
+  .skill {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 985px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    margin: 15px 0px;
+    object-fit: contain;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .skill {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,10 @@
+[
+    {
+      "role": "Web developer",
+      "organisation": "Delhi Technological University(DTU)",
+      "startDate": "Sept, 2023",
+      "endDate": "Dec, 2023",
+      "experiences": ["Developed a Frontend Website representing Vigilance Section of DTU"],
+      "imageSrc": "history/DTU.png"
+    }
+  ]
