@@ -24,7 +24,7 @@ app.use(bodyParser.json({ limit: '50mb', extended: true }))
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }))
 
 const corsOptions = {
-    origin: 'http://localhost:5173', // Allow requests from this origin
+    origin: '*', // Allow requests from this origin
     optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
