@@ -8,6 +8,10 @@
       "imageSrc": "skills/css.png"
     },
     {
+      "title": "Javascript",
+      "imageSrc": "skills/Javascript.webp"
+    },
+    {
       "title": "React",
       "imageSrc": "skills/react.png"
     },
@@ -22,6 +26,10 @@
     {
       "title": "MongoDB",
       "imageSrc": "skills/mongodb.png"
+    },
+    {
+      "title": "SQL",
+      "imageSrc": "skills/Sql.png"
     },
     {
       "title": "Material UI",

@@ -8,10 +8,10 @@
       "source": "https://github.com/opcodeer/Project-2"
     },
     {
-      "title": "Metube",
-      "imageSrc": "projects/Metube.png",
-      "description": "This react project is a video sharing platform named as Metube used to provide creative video contents to the users using Youtube API.",
-      "skills": ["React", "Express", "Node", "Material UI","Socket IO"],
+      "title": "Samvaad",
+      "imageSrc": "projects/Samvaad project.png",
+      "description": "Samvaad is a simple yet effective chat application designed to help you stay connected with others through text-based communication. Whether you need a platform for casual conversations or professional networking, Samvaad provides a straightforward and reliable solution.",
+      "skills": ["React/Vite", "Express", "Node", "Tailwind CSS","Socket IO"],
       "demo": "https://www.example.com",
       "source": "https://github.com/opcodeer/Project-4"
     },

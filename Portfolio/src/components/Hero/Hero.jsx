@@ -19,12 +19,12 @@ export const Hero = () => {
         </div>
         <div className={styles.profilebox}><a href="https://www.linkedin.com/in/gautam-gautam-47264a273/" target="_blank"><img src={getImageUrl("hero/linkedin.png") } alt="linked in image" className={styles.profile}/></a>
         <a href="https://github.com/opcodeer" target="_blank"><img src={getImageUrl("hero/github.png")} alt="" className={styles.profile}/></a></div>
-        <a href={getImageUrl("hero/Gautam-cv2.pdf")} className={styles.resume} target="_blank">
+        <a href={"https://drive.google.com/file/d/1RLHeFGzqxptCVmpo0TY4o4lE9k7rftFS/view"} className={styles.resume} target="_blank">
           Cv/Resume
         </a>
       </div>
       <img
-        src={getImageUrl("hero/My profile image.jpeg")}
+        src={getImageUrl("hero/My image.jpg")}
         alt="Hero image of me"
         className={styles.heroImg}
       />

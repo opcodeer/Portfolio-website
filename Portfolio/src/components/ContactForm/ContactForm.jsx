@@ -16,6 +16,8 @@ export const ContactForm = () => {
 
   const containerRef = useRef(null);
 
+  // Commented out the scrolling behavior
+  /*
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -41,6 +43,7 @@ export const ContactForm = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  */
 
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission
