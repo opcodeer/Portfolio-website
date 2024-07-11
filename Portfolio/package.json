@@ -3,14 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "cd Portfolio && vite",
-    "build": "cd Portfolio && npm i && vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "start-frontend": "vite",
-    "start-backend": "cd Backend && node app.js"
-  },
+"scripts": {
+  "dev": "cd Porfolio && npx vite",
+  "build": "cd Porfolio && npm i && npx vite build",
+  "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+  "preview": "npx vite preview",
+  "start-frontend": "npx vite",
+  "start-backend": "cd Backend && node app.js"
+},
   "dependencies": {
     "@fontsource/outfit": "^5.0.12",
     "@fontsource/roboto": "^5.0.12",
