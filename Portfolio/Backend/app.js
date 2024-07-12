@@ -39,7 +39,7 @@ app.use("/user", userRouter);
 async function startServer() {
     try {
         await connectToDatabase();
-        app.listen(port, '0.0.0.0', () => {
+        app.listen(port, '0.0.0.0/0', () => {
             console.log(`The application successfully started on port ${port}`);
         });
     } catch (error) {
