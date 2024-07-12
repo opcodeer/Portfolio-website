@@ -8,8 +8,9 @@ const cors = require('cors');
 const userRouter = require('./routes/users.js');
 
 const app = express();
-const port = process.env.PORT; // Use environment variable for port, default to 8000 if not specified
-console.log(port);
+const port = process.env.PORT || 8000; // Use environment variable for port, default to 8000 if not specified
+console.log('Port:', port);
+
 // Connect to MongoDB
 async function connectToDatabase() {
     try {
@@ -38,7 +39,7 @@ app.use("/user", userRouter);
 async function startServer() {
     try {
         await connectToDatabase();
-        app.listen(port, () => {
+        app.listen(port, '0.0.0.0', () => {
             console.log(`The application successfully started on port ${port}`);
         });
     } catch (error) {
