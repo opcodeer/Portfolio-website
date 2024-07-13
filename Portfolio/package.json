@@ -4,14 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "cd Portfolio && vite",
-    "build": "cd Portfolio && npm install && vite build",
-    "lint": "cd Portfolio && eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "cd Portfolio && vite preview",
-    "start-frontend": "cd Portfolio && vite",
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "start-frontend": "vite",
     "serve": "cd Portfolio/Backend && npm run serve",
     "start": "concurrently \"npm run start-frontend\" \"npm run serve\"",
-    "start-render": "cd Portfolio && npm run build-render",
+    "start-render": "npm run build-render",
     "build-render": "npm install && npm run build && npm run serve"
   },
   "dependencies": {
