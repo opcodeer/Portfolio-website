@@ -62,7 +62,7 @@ export const ContactForm = () => {
 
       const responseData = await response.json();
       if (response.ok) {
-        console.log('Signup successful!');
+        console.log('Message sent successfully');
         localStorage.setItem('token', responseData.authtoken);
         toast.success('Your message sent successfully', {
           position: "top-right",

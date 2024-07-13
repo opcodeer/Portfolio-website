@@ -2,7 +2,7 @@ require('dotenv').config();
 // const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
-JWT_SECRET = process.env.JWT_SECRET || 'mySecretKeyForJWTs@2024';
+JWT_SECRET = process.env.JWT_SECRET;
 const getmessage = async (req, res) => {
     const { name,email,message } = req.body;
     
