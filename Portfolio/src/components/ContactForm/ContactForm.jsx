@@ -48,61 +48,61 @@ export const ContactForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission
     try {
-      const response = await fetch('https://portfolio-website-opyd.onrender.com/user/getmessage', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message
-        })
-      });
+        const response = await fetch('https://portfolio-website-opyd.onrender.com/user/getmessage', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                message: formData.message
+            })
+        });
 
-      const responseData = await response.json();
-      if (response.ok) {
-        console.log('Message sent successfully');
-        localStorage.setItem('token', responseData.authtoken);
-        toast.success('Your message sent successfully', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-          transition: Bounce,
-        });
-      } else {
-        // Handle failed signup
-        toast.error('Error during message sending', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-          transition: Bounce,
-        });
-      }
+        const responseData = await response.json();
+        if (response.ok) {
+            console.log('Message sent successfully');
+            localStorage.setItem('token', responseData.authtoken);
+            toast.success('Your message sent successfully', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
+        } else {
+            toast.error('Error during message sending', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
+        }
     } catch (error) {
-      toast.error('Error during message sending', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        transition: Bounce,
-      });
+        toast.error('Error during message sending', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+        });
     }
-  };
+};
+
 
   return (
     <>
