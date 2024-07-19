@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
 // Allow all websites and set credentials to true
 app.use(cors({
-    origin: true,
+    origin: "*",
     credentials: true,
 }));
 
