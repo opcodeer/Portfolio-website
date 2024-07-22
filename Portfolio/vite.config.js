@@ -12,6 +12,8 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // This makes the server accessible externally
     port: 5000 // Specify the port you want to use
+  },
+  define: {
+    'process.env.NODE_ENV': JSON.stringify('production')
   }
 });
-
