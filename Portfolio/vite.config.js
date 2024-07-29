@@ -12,6 +12,10 @@ export default defineConfig({
       localsConvention: 'camelCase',
     },
   },
+  server: {
+    host: '0.0.0.0',
+    port: 5000,
+  },
   build: {
     minify: 'terser', // Enable Terser for minification
     sourcemap: false, // Disable source maps for production builds
