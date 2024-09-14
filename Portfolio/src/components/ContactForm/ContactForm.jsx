@@ -108,7 +108,7 @@ export const ContactForm = () => {
     <>
       <div ref={containerRef} className={styles.container} id="contact">
         <div className='getintouch'>Get In Touch</div>
-        <form action="post" onSubmit={handleSubmit} className={styles.contactForm}>
+        <form action={"POST"}onSubmit={handleSubmit} className={styles.contactForm}>
           <input type="text" aria-label='name' name='name' placeholder='name' className={styles.input} onChange={handleChange} />
           <input type="email" name='email' placeholder='email' className={styles.input} onChange={handleChange} />
           <textarea type="text" id='message' name='message' placeholder='message' className={styles.textarea} onChange={handleChange} />

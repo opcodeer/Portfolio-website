@@ -1,5 +1,5 @@
 const express = require('express');
-const {getmessage} = require('../controllers/user');
+const {getmessage} = require('../controllers/user.js');
 
 const router = express.Router();
 // router.post('/signin',signin);
