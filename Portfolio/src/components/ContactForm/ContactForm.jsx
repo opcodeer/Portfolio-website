@@ -48,7 +48,7 @@ export const ContactForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission
     try {
-        const response = await fetch('https://portfolio-website-opyd.onrender.com/user/getmessage', {
+        const response = await fetch('https://porfolio-backend-xi.vercel.app/user/getmessage', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
